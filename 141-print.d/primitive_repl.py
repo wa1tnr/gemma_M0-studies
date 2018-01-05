@@ -2,6 +2,11 @@
 
 # developed on Gemma M0 - likely to work on all CircuitPython hardware
 
+# SEE ALSO
+#   https://github.com/CharleyShattuck/Feather-M0-interpreter/blob/master/Interpreter.ino
+
+# rollback -- establishing the history of this file (all 36 hours of it).
+
 import builtins
 import time
 counter = 4

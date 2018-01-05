@@ -5,14 +5,41 @@
 # SEE ALSO
 #   https://github.com/CharleyShattuck/Feather-M0-interpreter/blob/master/Interpreter.ino
 
-# rollback -- establishing the history of this file (all 36 hours of it).
+# end of rollback series -- once again current.
+
+# - - - - - - - - - - - - - - - - -
+
+# limit - an int must be
+# 0x3fffffff # 1073741823 # but not
+# 0x40000000 - overflow (this is considered a long int)
+
+# So this is a 30-bit unsigned value
+# let's see what the signed limit is
+
+# -1073741824 is the limit, as expected.
+
+# 0x3f ff ff ff
+
+# 1 1  3
 
 import builtins ; import time
 
-versionne = "seven foxtrot two"
+print("BEGIN.", end='')
+print("the monotonic is: ", end='')
+
+# time.monotonic() is good for 2^22 milliseconds (1.165 hours of wall-clock time)
+# it is derated gracefully from there, by fewer updates without lost (millisecond-length) ticks
+
+print(time.monotonic()) # seemed necessary when in a running program
+# time.monotonic() # compiles but has no effects seen - REPL only, maybe.
+
+versionne = "seven foxtrot three eff"
 
 def prompt():
     print(" ok  ", end='',)
+    print("the monotonic is: ", end='')
+    print(time.monotonic(), end='')
+    print(" ", end='')
 
 def get_things():
     global tib ; tib=input(); # terminal input buffer
@@ -46,6 +73,7 @@ def looping():
         time.sleep(0.128)
 # - - - - - - - - - - - - - - - - - - - -
 signon()
+looping()
 # looping()  # run this in the REPL:
 #     'import main;main.looping()'
 # END.

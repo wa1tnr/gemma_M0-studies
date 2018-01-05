@@ -9,6 +9,8 @@
 
 import builtins ; import time
 
+versionne = "seven foxtrot two"
+
 def prompt():
     print(" ok  ", end='',)
 
@@ -24,7 +26,7 @@ def get_things():
     prompt() ; return tab, tib
 
 def signon():
-    print("version_seven_delta", end=' ')
+    print(versionne, end=' ')
     print("OK. ", end='')
 
 def looping():

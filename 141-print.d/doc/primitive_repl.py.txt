@@ -1,0 +1,12 @@
+
+ Please see:
+
+  https://github.com/CharleyShattuck/Feather-M0-interpreter
+
+ Intent is to see how close an emulation of Charley's interpreter
+ can be done in CircuitPython.  January 2018, new project.
+
+ Longer goal would be to use the new interactive environment
+ to write a driver for a graphic LCD.  Seems like it'd be
+ useful to have a forth-like interpreter available.
+

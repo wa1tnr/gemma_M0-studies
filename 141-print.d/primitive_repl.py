@@ -17,23 +17,17 @@ def get_things():
     global tab ; tab=''
     try:
         tab='' ; tab = int(tib)
-
     except ValueError:
         pass
-
     if (isinstance(tab, int)):
         print("tab was an int. ", end='')
-
     prompt() ; return tab, tib
 
 def signon():
-    print("ooask. ", end='')
+    print("version_seven_delta", end='')
     print("OK. ", end='')
 
-# ----------------              -----------------
-
 def looping():
-
     while True:
         get_things()
         if (isinstance(tab, int)):
@@ -41,15 +35,12 @@ def looping():
             print(tab)
             print("less 7: ", end='')
             print(tab -7)
-
         if (isinstance(tab, str)):
             m = 1 ; # noop # print("ERROR - detect and ignore.")
-
         if (isinstance(tib, str)):
             if (len(tib) > 0):
                 print("printing the str, tib, the terminal input buffer: ")
                 print(tib)
-
         time.sleep(0.128)
 # - - - - - - - - - - - - - - - - - - - -
 signon()

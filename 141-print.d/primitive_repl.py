@@ -15,10 +15,6 @@ counter = 4
 print("turna sevixale bce78")
 # ---------------------------
 
-# ----------------- granular
-
-# -----------------fuzzy
-
 def ESC_color():
     print("\x1b\x5b0;1;", end='',)
 
@@ -29,14 +25,17 @@ def neutral():
 # -----------------fuzzy
 
 def prompt():
-    print(" ok", end='',)
+    print(" ok", end='\n',)
+
+    # print(" ok", end='\n',)
 
 def get_things():
-    # Value=input("Please type a value:")
-    # Value=raw_input()
-    Value=input(self)
-    print(Value)
-    print()
+    # tib=input("prompted for tib content:")
+    # tib=raw_input()
+    tib=input()
+    tab=int(tib)
+    tab=tab - 11
+    print(tab)
     prompt()
 
 def signon():

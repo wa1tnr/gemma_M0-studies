@@ -24,7 +24,7 @@ def get_things():
     prompt() ; return tab, tib
 
 def signon():
-    print("version_seven_delta", end='')
+    print("version_seven_delta", end=' ')
     print("OK. ", end='')
 
 def looping():

@@ -1,4 +1,4 @@
-# aprimitive repl-like dialog # nis 2018 January 05
+# primitive repl-like dialog # nis 2018 January 05
 
 # developed on Gemma M0 - likely to work on all CircuitPython hardware
 
